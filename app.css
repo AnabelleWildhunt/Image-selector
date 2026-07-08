@@ -1,18 +1,108 @@
+/* --------------- TYPOGRAPHY --------------- */
+
 :root{
     /* COLORS */
-    --main: #;
-    --secondary: #;
-    --tertiary: #;
-    --background: #;
-    --detail-color: #;
-    --black: #;
-    --white: #;
-    --grey: #;
+    --main: #B388EB;
+    --secondary: #8093F1;
+    --tertiary: #72DDF7;
+    --background: #FDC5F5;
+    --contrast: #F7AEF8;
+    --black: #0c090c;
+    --white: #fafafa;
+    --grey: #594c5b;
+    /* BOX MODEL PROPERTIES */
+    --global-width: 500px;
 }
 
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: pink;
+    background-color: var(--background);
+    color: var(--white);
+}
+
+header, nav, main, footer{
+    margin: 0 auto;
+    width: var(--global-width);
+    border-left: 5px solid var(--white);
+    border-right: 5px solid var(--white);
+}
+
+p{
+    padding: 0;
+}
+
+a{
+    color: var(--white);
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+
+/* --------------- COMPONENTS --------------- */
+
+.navbar li:hover, .navbar li:focus{
+    transform: translate(0, 20px);
+}
+
+.flex{
+    display: flex;
+}
+
+/* --------------- LAYOUT --------------- */
+
+header{
+    height: 150px;
+    background-color: var(--tertiary);
+    border-bottom: 5px solid var(--white);
+    position: relative;
+    z-index: 10;
+}
+
+nav{
+    position: relative;
+}
+
+.navbar{
+    position: relative;
+    left: -5px;
+    margin: 0 auto;
+    width: calc(var(--global-width) + 10px);
+}
+
+.navbar{
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.navbar li{
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    z-index: 5;
+    top: -20px;
+    width: 25%;
+    height: 50px;
+    background-color: var(--contrast);
+    padding-bottom: 10px;
+    border: 5px solid var(--white);
+    border-top: none;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+main{
+    height: 500px;
+}
+
+footer{
+    height: 100px;
+    border-bottom: 5px solid var(--white);
 }
