@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
     <title>Image selector</title>
 </head>
 <body>
     
-    <header>
-
+    <header class="flex">
+        <img src="img/title-icon.svg" alt="image icon">
+        <h1>Image selector</h1>
     </header>
 
     <nav>
@@ -21,14 +25,25 @@
         </ul>
     </nav>
 
-    <main>
+    <main class="flex">
         
+        <div id="selector">
+
+        </div>
+
+        <div class="flex checkbox-container">
+            <label for="is-gif">Is a gif?</label>
+            <input type="checkbox" name="is-gif" id="is-gif">
+        </div>
+
+        <button class="btn">Get image~!</button>
+
     </main>
 
     <footer>
 
     </footer>
 
-<script src="script.js"></script>
+<script src="script.js" type="module"></script>
 </body>
 </html>
