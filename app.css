@@ -12,6 +12,8 @@
     --grey: #594c5b;
     /* BOX MODEL PROPERTIES */
     --global-width: 500px;
+    /* OTHERS */
+    --font: "Cherry Cream Soda", sans-serif;
 }
 
 body{
@@ -20,7 +22,7 @@ body{
     box-sizing: border-box;
     background-color: var(--background);
     color: var(--white);
-    font-family: "Cherry Cream Soda", sans-serif;
+    font-family: var(--font);
 }
 
 header, nav, main, footer{
@@ -52,7 +54,19 @@ ul{
 /* --------------- COMPONENTS --------------- */
 
 .btn{
-    fon
+    font-family: var(--font);
+    font-size: 18px;
+    color: var(--white);
+    background-color: var(--main);
+    padding: 10px 20px;
+    border: 5px solid var(--white);
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+.btn:hover, .btn:focus{
+    transform: scale(105%);
 }
 
 .navbar li:hover, .navbar li:focus{
@@ -117,7 +131,6 @@ main{
 
 .checkbox-container{
     gap: 20px;
-    margin
 }
 
 footer{
