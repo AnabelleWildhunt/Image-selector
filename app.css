@@ -69,6 +69,10 @@ ul{
     transform: scale(105%);
 }
 
+option::selection{
+    background-color: var(--secondary);
+}
+
 .navbar li:hover, .navbar li:focus{
     transform: translate(0, 20px);
 }
@@ -127,6 +131,24 @@ main{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+}
+
+#images{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main);
+    color: var(--white);
+    font-family: var(--font);
+    font-size: 1.5rem;
+    width: calc(var(--global-width) - 100px);
+    border: var(--contrast);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#images span{
+    cursor: pointer;
 }
 
 .checkbox-container{
