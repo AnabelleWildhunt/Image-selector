@@ -1,19 +1,20 @@
 import { imgs } from "./data.js"
-const selector = document.getElementById("images")
+const images = document.getElementById("images")
 
 
-// THIS EVENT MAKES "#images" DIV HIGHLIGHT SPAN LIKE SELECT ELEMENT
+// THIS EVENT OPERATES CLICKING ON THE MAIN SITE
 document.addEventListener("click", function(e){
 
-    if (e.target.matches(`span`)){
+    if (e.target.matches(`span[class="pseudo-option"]`)){
         document.querySelectorAll(`span`).forEach(function(span){
         span.classList.remove("highlighted")
         })
         e.target.classList.add("highlighted")
-    } else {
+    } else if (e.target.matches(`li[aria-label="link"]`)) {
         document.querySelectorAll(`span`).forEach(function(span){
             span.classList.remove("highlighted")
         })
+        console.log("Link!")
     }
 
 })
