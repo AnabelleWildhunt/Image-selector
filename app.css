@@ -159,6 +159,7 @@ main{
 
 .checkbox-container{
     gap: 20px;
+    margin: auto auto 30px auto;
 }
 
 footer{

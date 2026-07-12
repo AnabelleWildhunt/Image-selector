@@ -29,7 +29,7 @@ document.addEventListener("click", function(e){
 
 // THIS FUNCTION RENDERS CONTENT OF MAIN PAGE
 function renderMainPage(){
-    
+
     let mainContent = ""
     let imagesContent = ""
 
@@ -41,7 +41,7 @@ function renderMainPage(){
     </section>
 
     <div class="flex checkbox-container">
-        <label for="is-gif">Is a gif?</label>
+        <label for="is-gif">Enable a gifs?</label>
         <input type="checkbox" name="is-gif" id="is-gif">
     </div>
 
