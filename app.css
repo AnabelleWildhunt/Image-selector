@@ -77,6 +77,21 @@ option::selection{
     transform: translate(0, 20px);
 }
 
+form{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+input{
+    margin-bottom: 20px;
+    background-color: var(--main);
+    padding: 10px 15px;
+    border: 5px solid var(--contrast);
+    border-radius: 50px;
+}
+
 .highlighted{
     background-color: var(--secondary);
     padding: 0 5px;
@@ -150,6 +165,7 @@ main{
     width: calc(var(--global-width) - 100px);
     border: var(--contrast);
     border-radius: 20px;
+    margin-top: 30px;
     overflow: hidden;
 }
 
